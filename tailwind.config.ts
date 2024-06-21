@@ -25,8 +25,8 @@ const config = {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
 				primary: {
-					DEFAULT: "var(--primary)",
-					foreground: "var(--primary-foreground)",
+					DEFAULT: "rgb(var(--primary))",
+					foreground: "rgb(var(--primary-foreground))",
 				},
 				secondary: {
 					DEFAULT: "var(--secondary)",
@@ -75,7 +75,6 @@ const config = {
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
-	presets: [],
 } satisfies Config;
 
 export default config;

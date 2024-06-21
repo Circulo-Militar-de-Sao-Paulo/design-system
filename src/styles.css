@@ -1,4 +1,4 @@
-@import "open-color.css";
+@import url("open-color.css");
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +6,8 @@
 
 @layer base {
 	:root {
-		--background: 210, 17%, 98%;
-		--foreground: 210, 11%, 15%;
+		--background: var(--oc-gray-0);
+		--foreground: var(--oc-gray-9);
 
 		--card: 0 0% 100%;
 		--card-foreground: 222.2 84% 4.9%;
@@ -15,8 +15,8 @@
 		--popover: 0 0% 100%;
 		--popover-foreground: 222.2 84% 4.9%;
 
-		--primary: --oc-gray-9;
-		--primary-foreground: 210 40% 98%;
+		--primary: var(--oc-green-9-rgb);
+		--primary-foreground: var(--oc-green-0-rgb);
 
 		--secondary: 210 40% 96.1%;
 		--secondary-foreground: 222.2 47.4% 11.2%;
