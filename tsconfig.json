@@ -1,0 +1,17 @@
+{
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"moduleResolution": "Bundler",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"target": "ES2022",
+		"strict": true,
+		"noEmit": true
+	}
+}
