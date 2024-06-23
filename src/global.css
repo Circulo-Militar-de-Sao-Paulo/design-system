@@ -6,34 +6,56 @@
 
 @layer base {
 	:root {
+		/* Background */
+
 		--background: var(--oc-gray-0);
 		--foreground: var(--oc-gray-9);
 
-		--card: 0 0% 100%;
-		--card-foreground: 222.2 84% 4.9%;
+		/* Components */
+
+		--card: var(--oc-gray-1);
+		--card-foreground: var(--oc-gray-9);
 
 		--popover: 0 0% 100%;
 		--popover-foreground: 222.2 84% 4.9%;
 
-		--primary: var(--oc-green-9-rgb);
-		--primary-foreground: var(--oc-green-0-rgb);
-
-		--secondary: 210 40% 96.1%;
-		--secondary-foreground: 222.2 47.4% 11.2%;
-
-		--muted: 210 40% 96.1%;
-		--muted-foreground: 215.4 16.3% 46.9%;
-
-		--accent: 210 40% 96.1%;
-		--accent-foreground: 222.2 47.4% 11.2%;
-
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 210 40% 98%;
-
-		--border: 214.3 31.8% 91.4%;
 		--input: 214.3 31.8% 91.4%;
-		--ring: 222.2 84% 4.9%;
 
+		/* Semantic colors */
+
+		--primary: var(--oc-indigo-8);
+		--primary-foreground: var(--oc-indigo-0);
+
+		--secondary: var(--oc-yellow-8);
+		--secondary-foreground: var(--oc-yellow-0);
+
+		--accent: var(--oc-grape-8);
+		--accent-foreground: var(--oc-grape-0);
+
+		--muted: var(--oc-gray-3);
+		--muted-foreground: var(--oc-gray-6);
+
+		/* Feedback */
+
+		--destructive: var(--oc-red-8);
+		--destructive-foreground: var(--oc-red-0);
+
+		--info: var(--oc-cyan-8);
+		--info-foreground: var(--oc-cyan-0);
+
+		--success: var(--oc-green-8);
+		--success-foreground: var(--oc-green-0);
+
+		--warning: var(--oc-orange-8);
+		--warning-foreground: var(--oc-orange-0);
+
+		--success: var(--oc-green-8);
+		--success-foreground: var(--oc-green-0);
+
+		/* Elements */
+
+		--border: var(--oc-gray-3);
+		--ring: var(--primary);
 		--radius: 0.5rem;
 	}
 
