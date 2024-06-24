@@ -1,9 +1,12 @@
 {
 	"name": "@cmsp/design-system",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"main": "dist/design-system.js",
-	"types": "dist/src/index.d.ts",
+	"types": "dist/index.d.ts",
+	"publishConfig": {
+		"access": "public"
+	},
 	"files": [
 		"dist"
 	],
