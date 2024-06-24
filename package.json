@@ -1,7 +1,12 @@
 {
 	"name": "@cmsp/design-system",
-	"type": "module",
 	"version": "0.0.3",
+	"type": "module",
+	"main": "dist/design-system.js",
+	"types": "dist/src/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -47,9 +52,7 @@
 		"lucide-react": "^0.396.0",
 		"next-themes": "^0.3.0",
 		"open-color": "^1.9.1",
-		"react": "^18.3.1",
 		"react-day-picker": "^8.10.1",
-		"react-dom": "^18.3.1",
 		"react-hook-form": "^7.52.0",
 		"react-resizable-panels": "^2.0.19",
 		"sonner": "^1.5.0",
@@ -82,9 +85,17 @@
 		"eslint-plugin-react-refresh": "^0.4.7",
 		"eslint-plugin-storybook": "^0.8.0",
 		"postcss": "^8.4.38",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"storybook": "^8.1.10",
 		"tailwindcss": "^3.4.4",
 		"typescript": "^5.2.2",
-		"vite": "^5.3.1"
+		"vite": "^5.3.1",
+		"vite-plugin-dts": "^3.9.1"
+	},
+	"peerDependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tailwindcss": "^3.4.4"
 	}
 }
