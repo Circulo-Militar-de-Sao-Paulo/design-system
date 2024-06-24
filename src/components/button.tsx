@@ -23,7 +23,7 @@ const buttonVariants = cva(
 				warning:
 					"bg-warning text-warning-foreground hover:bg-warning/90",
 
-				ghost: "hover:bg-muted/60",
+				ghost: "hover:bg-muted/80",
 			},
 			size: {
 				sm: "h-9 rounded-md px-3",
