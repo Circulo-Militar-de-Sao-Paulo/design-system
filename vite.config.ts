@@ -9,7 +9,11 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: resolve(__dirname, "src/index.ts"),
+			name: "design-system",
 			formats: ["es"],
+		},
+		rollupOptions: {
+			external: ["tailwindcss", "react", "react-dom"],
 		},
 	},
 });
