@@ -10,8 +10,57 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Primary: Story = {
 	args: {
-		children: "Botão",
+		children: "Primário",
+	},
+};
+
+export const Secondary: Story = {
+	args: {
+		children: "Secundário",
+		variant: "secondary",
+	},
+};
+
+export const Accent: Story = {
+	args: {
+		children: "Acento",
+		variant: "accent",
+	},
+};
+
+export const Destructive: Story = {
+	args: {
+		children: "Destrutivo",
+		variant: "destructive",
+	},
+};
+
+export const Info: Story = {
+	args: {
+		children: "Informação",
+		variant: "info",
+	},
+};
+
+export const Success: Story = {
+	args: {
+		children: "Sucesso",
+		variant: "success",
+	},
+};
+
+export const Warning: Story = {
+	args: {
+		children: "Aviso",
+		variant: "warning",
+	},
+};
+
+export const Ghost: Story = {
+	args: {
+		children: "Fantasma",
+		variant: "ghost",
 	},
 };

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import openColorPreset from "@/open-color";
 
 const config = {
 	darkMode: ["class"],
@@ -19,11 +20,9 @@ const config = {
 		},
 		extend: {
 			colors: {
-				border: "rgb(var(--border))",
-				input: "rgb(var(--input))",
-				ring: "rgb(var(--ring))",
 				background: "rgb(var(--background))",
 				foreground: "rgb(var(--foreground))",
+
 				primary: {
 					DEFAULT: "rgb(var(--primary))",
 					foreground: "rgb(var(--primary-foreground))",
@@ -32,18 +31,32 @@ const config = {
 					DEFAULT: "rgb(var(--secondary))",
 					foreground: "rgb(var(--secondary-foreground))",
 				},
-				destructive: {
-					DEFAULT: "rgb(var(--destructive))",
-					foreground: "rgb(var(--destructive-foreground))",
+				accent: {
+					DEFAULT: "rgb(var(--accent))",
+					foreground: "rgb(var(--accent-foreground))",
 				},
 				muted: {
 					DEFAULT: "rgb(var(--muted))",
 					foreground: "rgb(var(--muted-foreground))",
 				},
-				accent: {
-					DEFAULT: "rgb(var(--accent))",
-					foreground: "rgb(var(--accent-foreground))",
+
+				destructive: {
+					DEFAULT: "rgb(var(--destructive))",
+					foreground: "rgb(var(--destructive-foreground))",
 				},
+				info: {
+					DEFAULT: "rgb(var(--info))",
+					foreground: "rgb(var(--info-foreground))",
+				},
+				success: {
+					DEFAULT: "rgb(var(--success))",
+					foreground: "rgb(var(--success-foreground))",
+				},
+				warning: {
+					DEFAULT: "rgb(var(--warning))",
+					foreground: "rgb(var(--warning-foreground))",
+				},
+
 				popover: {
 					DEFAULT: "rgb(var(--popover))",
 					foreground: "rgb(var(--popover-foreground))",
@@ -52,6 +65,10 @@ const config = {
 					DEFAULT: "rgb(var(--card))",
 					foreground: "rgb(var(--card-foreground))",
 				},
+
+				border: "rgb(var(--border))",
+				input: "rgb(var(--input))",
+				ring: "rgb(var(--ring))",
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -75,6 +92,7 @@ const config = {
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
+	presets: [openColorPreset],
 } satisfies Config;
 
 export default config;
