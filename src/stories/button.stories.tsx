@@ -33,7 +33,7 @@ export const Accent: Story = {
 export const Destructive: Story = {
 	args: {
 		children: "Destrutivo",
-		variant: "destructive",
+		variant: "error",
 	},
 };
 

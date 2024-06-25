@@ -99,30 +99,30 @@ namespace Themes {
 					200: colors.gray[100],
 					300: colors.gray[200],
 					400: colors.gray[300],
-					content: colors.gray[800],
+					content: colors.gray[900],
 				},
 				primary: {
-					DEFAULT: colors.red[500],
-					content: colors.white,
-				},
-				secondary: {
 					DEFAULT: colors.indigo[500],
 					content: colors.white,
 				},
+				secondary: {
+					DEFAULT: colors.yellow[500],
+					content: colors.black,
+				},
 				accent: {
-					DEFAULT: colors.pink[500],
+					DEFAULT: colors.emerald[700],
 					content: colors.white,
 				},
 				neutral: {
-					DEFAULT: colors.gray[400],
-					content: colors.gray[800],
+					DEFAULT: colors.gray[50],
+					content: colors.gray[900],
 				},
 				success: {
-					DEFAULT: colors.green[500],
+					DEFAULT: colors.green[700],
 					content: colors.white,
 				},
 				info: {
-					DEFAULT: colors.cyan[500],
+					DEFAULT: colors.blue[600],
 					content: colors.white,
 				},
 				warning: {
