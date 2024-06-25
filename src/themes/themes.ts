@@ -1,5 +1,5 @@
 import { CustomTheme } from "./types";
-import colors from "./colors";
+import colors, { gray } from "./colors";
 
 export default [
 	{
@@ -7,14 +7,14 @@ export default [
 		extend: {
 			colors: {
 				base: {
-					100: colors.gray[50],
-					200: colors.gray[100],
-					300: colors.gray[200],
-					400: colors.gray[300],
-					content: colors.gray[900],
+					100: gray[50],
+					200: gray[100],
+					300: gray[150],
+					400: gray[200],
+					content: gray[950],
 				},
 				primary: {
-					DEFAULT: colors.indigo[500],
+					DEFAULT: colors.violet[500],
 					content: colors.white,
 				},
 				secondary: {
@@ -61,7 +61,7 @@ export default [
 					content: colors.gray[100],
 				},
 				primary: {
-					DEFAULT: colors.indigo[300],
+					DEFAULT: colors.violet[300],
 					content: colors.white,
 				},
 				secondary: {
