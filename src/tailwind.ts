@@ -1,10 +1,7 @@
 import { Config } from "tailwindcss";
 import tailwindThemer from "tailwindcss-themer";
 import tailwindAnimate from "tailwindcss-animate";
-import {
-	DefaultThemeConfig,
-	ThemeConfig,
-} from "tailwindcss-themer/lib/utils/optionsUtils";
+import { ThemeConfig } from "tailwindcss-themer/lib/utils/optionsUtils";
 import colors from "./colors";
 
 type CustomTheme = ThemeConfig & {
@@ -84,14 +81,16 @@ type CustomTheme = ThemeConfig & {
 	};
 };
 
+type ThemeName = "light" | "dark";
+
 /**
  * Defina aqui todos os temas customizados para o design system
  *
  * @see https://github.com/RyanClementsHax/tailwindcss-themer
  */
-namespace Themes {
-	// Tema padrão (light), caso nenhuma classe de tema seja aplicada
-	export const defaultTheme: DefaultThemeConfig = {
+export const themes: Record<ThemeName, CustomTheme> = {
+	light: {
+		name: "light",
 		extend: {
 			colors: {
 				base: {
@@ -114,7 +113,7 @@ namespace Themes {
 					content: colors.white,
 				},
 				neutral: {
-					DEFAULT: colors.gray[50],
+					DEFAULT: colors.gray[100],
 					content: colors.gray[900],
 				},
 				success: {
@@ -135,7 +134,64 @@ namespace Themes {
 				},
 			},
 		},
-	};
+	},
+
+	dark: {
+		name: "dark",
+		extend: {
+			colors: {
+				base: {
+					100: colors.gray[900],
+					200: colors.gray[800],
+					300: colors.gray[700],
+					400: colors.gray[600],
+					content: colors.gray[100],
+				},
+				primary: {
+					DEFAULT: colors.indigo[400],
+					content: colors.white,
+				},
+				secondary: {
+					DEFAULT: colors.yellow[400],
+					content: colors.black,
+				},
+				accent: {
+					DEFAULT: colors.emerald[400],
+					content: colors.white,
+				},
+				neutral: {
+					DEFAULT: colors.gray[800],
+					content: colors.gray[100],
+				},
+				success: {
+					DEFAULT: colors.green[400],
+					content: colors.white,
+				},
+				info: {
+					DEFAULT: colors.blue[400],
+					content: colors.white,
+				},
+				warning: {
+					DEFAULT: colors.yellow[400],
+					content: colors.black,
+				},
+				error: {
+					DEFAULT: colors.red[400],
+					content: colors.white,
+				},
+			},
+		},
+	},
+};
+
+export function convertThemesToRecord(): Record<string, string> {
+	const r: Record<string, string> = {};
+
+	for (const theme of Object.values(themes)) {
+		r[theme.name] = theme.name;
+	}
+
+	return r;
 }
 
 /**
@@ -172,8 +228,8 @@ export const designPreset = {
 	plugins: [
 		tailwindAnimate,
 		tailwindThemer({
-			defaultTheme: Themes.defaultTheme,
-			themes: [],
+			defaultTheme: themes.light,
+			themes: Object.values(themes),
 		}),
 	],
 } satisfies Config;

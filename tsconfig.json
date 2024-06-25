@@ -1,9 +1,10 @@
 {
+	"include": ["src", ".storybook"],
 	"exclude": ["node_modules"],
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["./src/*"]
 		},
 		"isolatedModules": true,
 		"esModuleInterop": true,
