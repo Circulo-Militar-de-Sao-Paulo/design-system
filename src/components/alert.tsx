@@ -8,12 +8,17 @@ const alertVariants = cva(
 	{
 		variants: {
 			variant: {
-				default: "bg-base-100 text-content",
-				error: "border-error/50 text-error dark:border-error [&>svg]:text-error",
+				neutral: "bg-neutral/30 text-neutral-content border-neutral",
+				info: "bg-info/20 text-info-content [&>:is(h5,svg)]:text-info border-info",
+				success:
+					"bg-success/20 text-success-content [&>:is(h5,svg)]:text-success border-success",
+				warning:
+					"bg-warning/20 text-warning-content [&>:is(h5,svg)]:text-warning border-warning",
+				error: "bg-error/20 border-error/20 text-error-content [&>:is(h5,svg)]:text-error border-error",
 			},
 		},
 		defaultVariants: {
-			variant: "default",
+			variant: "neutral",
 		},
 	},
 );
