@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import { designPreset } from "@/tailwind";
+import { designPreset } from "./src/tailwind";
 
 const config = {
 	content: ["./src/**/*.{ts,tsx}"],

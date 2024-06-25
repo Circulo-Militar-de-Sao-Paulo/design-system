@@ -11,6 +11,8 @@ export type ColorLevel =
 	| 900;
 
 export type ColorName =
+	| "black"
+	| "white"
 	| "gray"
 	| "red"
 	| "yellow"
@@ -30,9 +32,11 @@ export type ColorName =
 	| "rose"
 	| "brown";
 
-type Colors = Record<ColorName, Record<ColorLevel, string>>;
+type Colors = Record<ColorName, Record<ColorLevel, string> | string>;
 
 export default {
+	black: "hsl(0 0% 0%)",
+	white: "hsl(0 0% 100%)",
 	gray: {
 		50: "hsl(210 10% 10%)",
 		100: "hsl(210 10% 19%)",
