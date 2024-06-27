@@ -9,12 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: "20"
-            - run: npm ci
+            - uses: oven-sh/setup-bun@v1
+            - run: bun install
             - run: npm run build
-            # - run: npm test
             - uses: JS-DevTools/npm-publish@v3
               with:
                   token: ${{ secrets.npm_token }}
