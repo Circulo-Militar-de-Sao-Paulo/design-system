@@ -45,6 +45,6 @@ const cmspGreen: MantineColorsTuple = [
 
 export const theme: MantineThemeOverride = createTheme({
 	colors: { cmspBlue, cmspYellow, cmspGreen },
-	primaryColor: cmspBlue[9],
+	primaryColor: "cmspBlue",
 	focusRing: "always",
 });
