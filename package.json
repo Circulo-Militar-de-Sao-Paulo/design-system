@@ -1,10 +1,9 @@
 {
 	"name": "@cmsp/design-system",
-	"version": "0.0.24",
-	"module": "src/index.tsx",
+	"version": "0.0.25",
 	"type": "module",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "bun build.ts && bun run build:declaration",
 		"build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
