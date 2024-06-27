@@ -1,6 +1,6 @@
 {
 	"name": "@cmsp/design-system",
-	"version": "0.0.20",
+	"version": "0.0.21",
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -17,10 +17,7 @@
 		}
 	},
 	"scripts": {
-		"build": "vite build",
-		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-		"storybook": "storybook dev -p 6006 --ci",
-		"build-storybook": "storybook build"
+		"build": "bun build ./src/index.tsx --out-dir dist"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.6.0",
