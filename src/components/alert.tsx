@@ -9,10 +9,10 @@ const alertVariants = cva(
 		variants: {
 			variant: {
 				neutral: "border-neutral",
-				info: "[&>:is(h5,svg)]:text-info border-info",
-				success: "[&>:is(h5,svg)]:text-success border-success",
-				warning: "[&>:is(h5,svg)]:text-warning border-warning",
-				error: "[&>:is(h5,svg)]:text-error border-error",
+				info: "[&>:is(svg)]:text-info border-info",
+				success: "[&>:is(svg)]:text-success border-success",
+				warning: "[&>:is(svg)]:text-warning border-warning",
+				error: "[&>:is(svg)]:text-error border-error",
 			},
 		},
 		defaultVariants: {
