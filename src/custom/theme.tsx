@@ -1,8 +1,4 @@
-import {
-	MantineColorsTuple,
-	MantineProvider,
-	createTheme,
-} from "@mantine/core";
+import { MantineColorsTuple, createTheme } from "@mantine/core";
 
 const cmspBlue: MantineColorsTuple = [
 	"#f0effa",
@@ -43,15 +39,8 @@ const cmspGreen: MantineColorsTuple = [
 	"#00ad4a",
 ];
 
-const theme = createTheme({
+export const theme = createTheme({
 	colors: { cmspBlue, cmspYellow, cmspGreen },
 	primaryColor: cmspBlue[9],
 	focusRing: "always",
 });
-
-export function Providers({ children }: { children: React.ReactNode }) {
-	return <MantineProvider theme={theme}>{children}</MantineProvider>;
-}
-
-export * from "@mantine/core";
-export * from "@mantine/dates";
