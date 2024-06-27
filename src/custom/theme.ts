@@ -1,4 +1,8 @@
-import { MantineColorsTuple, createTheme } from "@mantine/core";
+import {
+	MantineColorsTuple,
+	MantineThemeOverride,
+	createTheme,
+} from "@mantine/core";
 
 const cmspBlue: MantineColorsTuple = [
 	"#f0effa",
@@ -39,7 +43,7 @@ const cmspGreen: MantineColorsTuple = [
 	"#00ad4a",
 ];
 
-export const theme = createTheme({
+export const theme: MantineThemeOverride = createTheme({
 	colors: { cmspBlue, cmspYellow, cmspGreen },
 	primaryColor: cmspBlue[9],
 	focusRing: "always",
