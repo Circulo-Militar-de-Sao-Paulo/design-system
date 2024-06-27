@@ -1,5 +1,6 @@
 {
 	"name": "@cmsp/design-system",
+	"version": "0.0.22",
 	"module": "src/index.tsx",
 	"type": "module",
 	"main": "dist/index.js",
