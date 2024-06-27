@@ -4,17 +4,15 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const alertVariants = cva(
-	"relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-content",
+	"relative w-full rounded-lg bg-base-200 border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-content",
 	{
 		variants: {
 			variant: {
-				neutral: "bg-neutral/30 text-neutral-content border-neutral",
-				info: "bg-info/20 text-info-content [&>:is(h5,svg)]:text-info border-info",
-				success:
-					"bg-success/20 text-success-content [&>:is(h5,svg)]:text-success border-success",
-				warning:
-					"bg-warning/20 text-warning-content [&>:is(h5,svg)]:text-warning border-warning",
-				error: "bg-error/20 border-error/20 text-error-content [&>:is(h5,svg)]:text-error border-error",
+				neutral: "border-neutral",
+				info: "[&>:is(h5,svg)]:text-info border-info",
+				success: "[&>:is(h5,svg)]:text-success border-success",
+				warning: "[&>:is(h5,svg)]:text-warning border-warning",
+				error: "[&>:is(h5,svg)]:text-error border-error",
 			},
 		},
 		defaultVariants: {

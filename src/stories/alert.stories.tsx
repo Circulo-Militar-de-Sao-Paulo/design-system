@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Alert, AlertTitle, AlertDescription } from "@/components/alert";
 import {
 	CircleCheckBig,
+	CircleX,
 	InfoIcon,
 	Settings,
 	TriangleAlert,
@@ -50,8 +51,8 @@ export const Warning: Story = {
 	render: () => (
 		<Alert variant="warning">
 			<TriangleAlert size={20} />
-			<AlertTitle>Alerta</AlertTitle>
-			<AlertDescription>Esse é um alerta de alerta</AlertDescription>
+			<AlertTitle>Aviso</AlertTitle>
+			<AlertDescription>Esse é um alerta de aviso</AlertDescription>
 		</Alert>
 	),
 };
@@ -59,7 +60,7 @@ export const Warning: Story = {
 export const Error: Story = {
 	render: () => (
 		<Alert variant="error">
-			<Settings size={20} />
+			<CircleX size={20} />
 			<AlertTitle>Erro</AlertTitle>
 			<AlertDescription>Esse é um alerta de erro</AlertDescription>
 		</Alert>

@@ -1,5 +1,5 @@
 import { CustomTheme } from "./types";
-import colors, { gray } from "./colors";
+import colors from "./colors";
 
 export default [
 	{
@@ -7,43 +7,43 @@ export default [
 		extend: {
 			colors: {
 				base: {
-					100: gray[50],
-					200: gray[100],
-					300: gray[150],
-					400: gray[200],
-					content: gray[950],
+					100: colors.gray[50],
+					200: colors.gray[100],
+					300: colors.gray[150],
+					400: colors.gray[200],
+					content: colors.gray[950],
 				},
 				primary: {
-					DEFAULT: colors.violet[500],
-					content: colors.white,
+					DEFAULT: colors.cmspPrimary[600],
+					content: colors.cmspPrimary[100],
 				},
 				secondary: {
-					DEFAULT: colors.yellow[500],
-					content: colors.black,
+					DEFAULT: colors.cmspSecondary[400],
+					content: colors.cmspSecondary[900],
 				},
 				accent: {
-					DEFAULT: colors.emerald[700],
-					content: colors.white,
+					DEFAULT: colors.cmspAccent[800],
+					content: colors.cmspAccent[100],
 				},
 				neutral: {
-					DEFAULT: colors.gray[100],
+					DEFAULT: colors.gray[150],
 					content: colors.gray[900],
 				},
 				success: {
-					DEFAULT: colors.green[700],
-					content: colors.white,
+					DEFAULT: colors.green[650],
+					content: colors.green[100],
 				},
 				info: {
-					DEFAULT: colors.blue[600],
-					content: colors.white,
+					DEFAULT: colors.blue[650],
+					content: colors.blue[100],
 				},
 				warning: {
-					DEFAULT: colors.yellow[500],
-					content: colors.black,
+					DEFAULT: colors.yellow[650],
+					content: colors.yellow[100],
 				},
 				error: {
-					DEFAULT: colors.red[500],
-					content: colors.white,
+					DEFAULT: colors.red[650],
+					content: colors.red[100],
 				},
 			},
 		},
@@ -55,42 +55,42 @@ export default [
 			colors: {
 				base: {
 					100: colors.gray[900],
-					200: colors.gray[800],
-					300: colors.gray[700],
-					400: colors.gray[600],
-					content: colors.gray[100],
+					200: colors.gray[850],
+					300: colors.gray[800],
+					400: colors.gray[750],
+					content: colors.gray[50],
 				},
 				primary: {
-					DEFAULT: colors.violet[300],
-					content: colors.white,
+					DEFAULT: colors.cmspPrimary[600],
+					content: colors.cmspPrimary[100],
 				},
 				secondary: {
-					DEFAULT: colors.yellow[300],
-					content: colors.black,
+					DEFAULT: colors.cmspSecondary[400],
+					content: colors.cmspSecondary[900],
 				},
 				accent: {
-					DEFAULT: colors.emerald[300],
-					content: colors.white,
+					DEFAULT: colors.cmspAccent[800],
+					content: colors.cmspAccent[100],
 				},
 				neutral: {
 					DEFAULT: colors.gray[800],
 					content: colors.gray[100],
 				},
 				success: {
-					DEFAULT: colors.green[300],
-					content: colors.white,
+					DEFAULT: colors.green[600],
+					content: colors.green[50],
 				},
 				info: {
-					DEFAULT: colors.blue[300],
-					content: colors.white,
+					DEFAULT: colors.blue[600],
+					content: colors.blue[50],
 				},
 				warning: {
-					DEFAULT: colors.yellow[300],
-					content: colors.black,
+					DEFAULT: colors.yellow[600],
+					content: colors.yellow[50],
 				},
 				error: {
-					DEFAULT: colors.red[300],
-					content: colors.white,
+					DEFAULT: colors.red[600],
+					content: colors.red[50],
 				},
 			},
 		},

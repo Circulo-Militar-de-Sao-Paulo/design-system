@@ -30,9 +30,9 @@ export const Accent: Story = {
 	},
 };
 
-export const Destructive: Story = {
+export const Error: Story = {
 	args: {
-		children: "Destrutivo",
+		children: "Erro",
 		variant: "error",
 	},
 };
