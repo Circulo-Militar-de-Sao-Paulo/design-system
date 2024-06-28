@@ -57,7 +57,6 @@ export const mantineProvider: MantineProviderProps = {
 	theme: createTheme({
 		colors: { cmspBlue, cmspYellow, cmspGreen },
 		primaryColor: "cmspBlue",
-		focusRing: "always",
 	}),
 };
 
