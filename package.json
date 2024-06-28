@@ -5,24 +5,9 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "bun build.ts && bun run build:declaration",
-		"build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
-		"postbuild": "bunx rimraf tsconfig.types.tsbuildinfo"
+		"build": "vite build",
+		"preview": "vite preview"
 	},
-	"devDependencies": {
-		"@types/bun": "^1.1.6",
-		"bun-types": "latest",
-		"prettier": "^3.3.2",
-		"rimraf": "^5.0.7",
-		"typescript": "^5.5.2"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"files": [
-		"dist/*.js",
-		"dist/*.d.ts"
-	],
 	"dependencies": {
 		"@mantine/carousel": "^7.11.0",
 		"@mantine/charts": "^7.11.0",
@@ -46,5 +31,32 @@
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"recharts": "2"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"prettier": "^3.3.2",
+		"typescript": "^5.2.2",
+		"vite": "^5.3.1",
+		"vite-plugin-dts": "^3.9.1",
+		"vite-tsconfig-paths": "^4.3.2"
+	},
+	"peerDependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"typescript": "^5.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.js"
+		}
 	}
 }

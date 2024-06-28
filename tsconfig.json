@@ -2,22 +2,18 @@
 	"include": ["src"],
 	"exclude": ["node_modules"],
 	"compilerOptions": {
-		"lib": ["ESNext"],
-		"module": "esnext",
-		"target": "esnext",
-		"moduleResolution": "bundler",
-		"moduleDetection": "force",
-		"allowImportingTsExtensions": true,
-		"noEmit": true,
-		"composite": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"moduleResolution": "Bundler",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"target": "ES2022",
 		"strict": true,
-		"downlevelIteration": true,
-		"skipLibCheck": true,
-		"jsx": "preserve",
-		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true,
-		"allowJs": true,
-		"types": ["bun-types"]
+		"noEmit": true
 	},
-	"files": ["src/index.tsx"]
+	"files": ["src/index.ts"]
 }
