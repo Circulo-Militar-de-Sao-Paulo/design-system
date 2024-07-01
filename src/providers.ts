@@ -6,7 +6,7 @@ import {
 } from "@mantine/core";
 import { DatesProviderProps } from "@mantine/dates";
 
-const cmspBlue: MantineColorsTuple = [
+const primary: MantineColorsTuple = [
 	"#f0effa",
 	"#dddbef",
 	"#b8b3e1",
@@ -19,7 +19,7 @@ const cmspBlue: MantineColorsTuple = [
 	"#322886",
 ];
 
-const cmspYellow: MantineColorsTuple = [
+const secondary: MantineColorsTuple = [
 	"#fffbe1",
 	"#fff6cc",
 	"#ffeb9b",
@@ -32,7 +32,7 @@ const cmspYellow: MantineColorsTuple = [
 	"#ae8b00",
 ];
 
-const cmspGreen: MantineColorsTuple = [
+const accent: MantineColorsTuple = [
 	"#ebfff3",
 	"#d5fee6",
 	"#a5fdca",
@@ -55,8 +55,8 @@ const cmspGreen: MantineColorsTuple = [
  */
 export const mantineProvider: MantineProviderProps = {
 	theme: createTheme({
-		colors: { cmspBlue, cmspYellow, cmspGreen },
-		primaryColor: "cmspBlue",
+		colors: { primary, secondary, accent },
+		primaryColor: "primary",
 	}),
 };
 
