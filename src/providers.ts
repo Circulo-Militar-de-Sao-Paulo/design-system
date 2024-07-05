@@ -1,4 +1,4 @@
-import "dayjs/locale/pt-br";
+import "dayjs/locale/ru";
 import {
 	MantineColorsTuple,
 	MantineProviderProps,
@@ -70,8 +70,7 @@ export const mantineProvider: MantineProviderProps = {
  */
 export const datesProvider: DatesProviderProps = {
 	settings: {
-		locale: "pt-br",
+		locale: "ru",
 		firstDayOfWeek: 1, // Segunda-feira
-		timezone: "UTC",
 	},
 };
