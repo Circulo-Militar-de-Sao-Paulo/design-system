@@ -1,62 +1,17 @@
 {
-	"name": "@cmsp/design-system",
-	"version": "0.0.29",
-	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@mantine/carousel": "^7.11.0",
-		"@mantine/charts": "^7.11.0",
-		"@mantine/code-highlight": "^7.11.0",
-		"@mantine/core": "^7.11.0",
-		"@mantine/dates": "^7.11.0",
-		"@mantine/dropzone": "^7.11.0",
-		"@mantine/form": "^7.11.0",
-		"@mantine/hooks": "^7.11.0",
-		"@mantine/modals": "^7.11.0",
-		"@mantine/notifications": "^7.11.0",
-		"@mantine/nprogress": "^7.11.0",
-		"@mantine/spotlight": "^7.11.0",
-		"@mantine/tiptap": "^7.11.0",
-		"@tabler/icons-react": "^3.7.0",
-		"@tiptap/extension-link": "^2.4.0",
-		"@tiptap/react": "^2.4.0",
-		"@tiptap/starter-kit": "^2.4.0",
-		"dayjs": "^1.11.11",
-		"embla-carousel-react": "^8.1.5",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"recharts": "2"
-	},
-	"devDependencies": {
-		"@types/react": "^18.3.3",
-		"@types/react-dom": "^18.3.0",
-		"@vitejs/plugin-react": "^4.3.1",
-		"prettier": "^3.3.2",
-		"typescript": "^5.2.2",
-		"vite": "^5.3.2",
-		"vite-plugin-dts": "^3.9.1",
-		"vite-tsconfig-paths": "^4.3.2"
-	},
-	"peerDependencies": {
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"typescript": "^5.0.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"files": [
-		"dist"
-	],
-	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.js"
-		}
-	}
+  "name": "shaky-star",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.14.0",
+    "@astrojs/check": "^0.9.2",
+    "typescript": "^5.5.4"
+  }
 }
