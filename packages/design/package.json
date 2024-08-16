@@ -1,5 +1,29 @@
 {
 	"name": "@cmsp/design-system",
-	"main": "index.js",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"main": "dist/index.mjs",
+	"types": "dist/index.d.mts",
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.mjs"
+		}
+	},
+	"scripts": {
+		"build": "tsup"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tsup": "^8.2.4",
+		"typescript": "^5.5.4"
+	}
 }
