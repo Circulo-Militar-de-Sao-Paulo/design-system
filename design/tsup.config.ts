@@ -6,5 +6,4 @@ export default defineConfig({
 	sourcemap: true,
 	clean: false,
 	format: ["esm"],
-	watch: true,
 });

@@ -7,17 +7,19 @@
 		"access": "public"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"lib/styles.css"
 	],
 	"exports": {
 		".": {
 			"import": "./dist/index.mjs",
 			"require": "./dist/index.mjs"
 		},
-		"./index.css": "./dist/index.css"
+		"./styles.css": "./lib/styles.css"
 	},
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"build:watch": "tsup --watch"
 	},
 	"devDependencies": {
 		"@types/react": "^18.3.3",

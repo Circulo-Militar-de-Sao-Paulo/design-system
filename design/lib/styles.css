@@ -73,20 +73,20 @@
 		--tertiary: 145 100% 30%;
 		--tertiary-foreground: 145 100% 98%;
 
-		--info: 170 90% 50%;
-		--info-foreground: 170 90% 10%;
+		--info: 170 80% 50%;
+		--info-foreground: 170 80% 10%;
 
-		--success: 130 90% 50%;
-		--success-foreground: 130 90% 10%;
+		--success: 140 80% 50%;
+		--success-foreground: 130 80% 10%;
 
-		--warning: 45 90% 50%;
-		--warning-foreground: 45 90% 10%;
+		--warning: 45 80% 50%;
+		--warning-foreground: 45 80% 10%;
 
-		--error: 0 90% 50%;
-		--error-foreground: 0 90% 98%;
+		--error: 0 80% 50%;
+		--error-foreground: 0 80% 98%;
 
-		--accent: 210 40% 96.1%;
-		--accent-foreground: 222.2 47.4% 11.2%;
+		--accent: 210 60% 15%;
+		--accent-foreground: 210 60% 98%;
 
 		--ring: 215 20.2% 65.1%;
 

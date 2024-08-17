@@ -1,5 +1,6 @@
 {
 	"scripts": {
-		"docs:dev": "cd docs && pnpm run dev"
+		"docs:dev": "cd docs && pnpm run dev",
+		"design:watch": "cd design && pnpm run build:watch"
 	}
 }
