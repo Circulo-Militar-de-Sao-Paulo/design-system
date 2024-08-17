@@ -1,41 +1,44 @@
 ---
 import "@cmsp/design-system/styles.css";
 
-import { Button } from "@cmsp/design-system";
+import Page from "@/components/page.astro";
+import { Button, Shell } from "@cmsp/design-system";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="flex flex-col gap-6 p-4">
-		<div class="flex gap-4">
-			<Button client:load>Primary</Button>
-			<Button variant="secondary" client:load>Secondary</Button>
-			<Button variant="tertiary" client:load>Tertiary</Button>
-			<Button variant="info" client:load>Info</Button>
-			<Button variant="success" client:load>Success</Button>
-			<Button variant="warning" client:load>Warning</Button>
-			<Button variant="error" client:load>Error</Button>
-			<Button variant="ghost" client:load>Ghost</Button>
-			<Button variant="outline" client:load>Outline</Button>
-		</div>
+<Page title="Test">
+	<Shell
+		header="Header"
+		subheader="Subheader"
+		footer="Footer"
+		subfooter="Subfooter"
+		sidebarLeft="Left"
+		sidebarRight="Right"
+	>
+		<div class="flex flex-col gap-6 p-4">
+			<div class="flex gap-4">
+				<Button client:load>Primary</Button>
+				<Button variant="secondary" client:load>Secondary</Button>
+				<Button variant="tertiary" client:load>Tertiary</Button>
+				<Button variant="info" client:load>Info</Button>
+				<Button variant="success" client:load>Success</Button>
+				<Button variant="warning" client:load>Warning</Button>
+				<Button variant="error" client:load>Error</Button>
+				<Button variant="ghost" client:load>Ghost</Button>
+				<Button variant="outline" client:load>Outline</Button>
+			</div>
 
-		<div class="flex items-end gap-4">
-			<Button size="xl" client:load>Extra Large</Button>
-			<Button size="lg" client:load>Large</Button>
-			<Button client:load>Default</Button>
-			<Button size="icon" client:load>Icon</Button>
-			<Button size="sm" client:load>Small</Button>
-		</div>
+			<div class="flex items-end gap-4">
+				<Button size="xl" client:load>Extra Large</Button>
+				<Button size="lg" client:load>Large</Button>
+				<Button client:load>Default</Button>
+				<Button size="icon" client:load>Icon</Button>
+				<Button size="sm" client:load>Small</Button>
+			</div>
 
-		<div class="flex flex-col gap-4">
-			<p>Parágrafo</p>
-			<p class="text-muted-foreground">Parágrafo muted</p>
+			<div class="flex flex-col gap-4">
+				<p>Parágrafo</p>
+				<p class="text-muted-foreground">Parágrafo muted</p>
+			</div>
 		</div>
-	</body>
-</html>
+	</Shell>
+</Page>
