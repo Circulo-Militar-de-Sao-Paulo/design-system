@@ -13,31 +13,31 @@ const buttonVariants = cva(
 	[
 		"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors",
 		/* Disabled */
-		"data-[disabled]:pointer-events-none data-[disabled]:opacity-50 ",
+		"data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
 		/* Focus Visible */
-		"data-[focus-visible]:outline-none data-[focus-visible]:ring-1 data-[focus-visible]:ring-ring ",
+		"data-[focus-visible]:ring-ring data-[focus-visible]:outline-none data-[focus-visible]:ring-1",
 		/* Resets */
 		"focus-visible:outline-none",
 		/* Pressed */
-		"data-[pressed]:transform data-[pressed]:scale-95",
+		"data-[pressed]:scale-95 data-[pressed]:transform",
 	],
 	{
 		variants: {
 			variant: {
 				primary:
-					"bg-primary text-primary-foreground shadow data-[hovered]:bg-primary/80",
+					"bg-primary text-primary-foreground data-[hovered]:bg-primary/80 shadow",
 				secondary:
-					"bg-secondary text-secondary-foreground shadow-sm data-[hovered]:bg-secondary/80",
+					"bg-secondary text-secondary-foreground data-[hovered]:bg-secondary/80 shadow-sm",
 				tertiary:
-					"bg-tertiary text-tertiary-foreground shadow-sm data-[hovered]:bg-tertiary/80",
-				info: "bg-info text-info-foreground shadow-sm data-[hovered]:bg-info/80",
+					"bg-tertiary text-tertiary-foreground data-[hovered]:bg-tertiary/80 shadow-sm",
+				info: "bg-info text-info-foreground data-[hovered]:bg-info/80 shadow-sm",
 				success:
-					"bg-success text-success-foreground shadow-sm data-[hovered]:bg-success/80",
+					"bg-success text-success-foreground data-[hovered]:bg-success/80 shadow-sm",
 				warning:
-					"bg-warning text-warning-foreground shadow-sm data-[hovered]:bg-warning/80",
-				error: "bg-error text-error-foreground shadow-sm data-[hovered]:bg-error/90",
+					"bg-warning text-warning-foreground data-[hovered]:bg-warning/80 shadow-sm",
+				error: "bg-error text-error-foreground data-[hovered]:bg-error/90 shadow-sm",
 				outline:
-					"border border-input bg-background shadow-sm  data-[hovered]:bg-accent data-[hovered]:text-accent-foreground",
+					"border-input bg-background data-[hovered]:bg-accent data-[hovered]:text-accent-foreground border shadow-sm",
 
 				ghost: "data-[hovered]:bg-accent data-[hovered]:text-accent-foreground",
 			},
@@ -53,7 +53,7 @@ const buttonVariants = cva(
 			variant: "primary",
 			size: "md",
 		},
-	}
+	},
 );
 
 interface ButtonProps
@@ -69,8 +69,8 @@ const Button = ({ className, variant, size, ...props }: ButtonProps) => {
 						variant,
 						size,
 						className,
-					})
-				)
+					}),
+				),
 			)}
 			{...props}
 		/>
