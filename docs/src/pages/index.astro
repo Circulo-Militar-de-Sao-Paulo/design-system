@@ -6,15 +6,8 @@ import { Button, Shell } from "@cmsp/design-system";
 ---
 
 <Page title="Test">
-	<Shell
-		header="Header"
-		subheader="Subheader"
-		footer="Footer"
-		subfooter="Subfooter"
-		sidebarLeft="Sidebar Left"
-		sidebarRight="Sidebar Right"
-	>
-		<div class="flex flex-col gap-6">
+	<Shell header="Header" footer="Footer">
+		<div class="flex flex-col gap-6 p-4">
 			<div class="flex gap-4">
 				<Button client:load>Primary</Button>
 				<Button variant="secondary" client:load>Secondary</Button>

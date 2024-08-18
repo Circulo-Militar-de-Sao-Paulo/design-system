@@ -49,20 +49,20 @@
 	}
 
 	:root {
-		--background: 210 70% 5%;
-		--foreground: 210 70% 98%;
+		--background: 210 10% 7%;
+		--foreground: 210 10% 98%;
 
-		--muted: 210 40% 95%;
-		--muted-foreground: 210 20% 50%;
+		--overlay: 210 20% 9%;
+		--overlay-foreground: 210 20% 98%;
 
-		--popover: 0 0% 100%;
+		--muted: 210 10% 95%;
+		--muted-foreground: 210 5% 65%;
+
+		--popover: 210 0% 100%;
 		--popover-foreground: 222.2 47.4% 11.2%;
 
-		--border: 214.3 31.8% 91.4%;
+		--border: 210 5% 30%;
 		--input: 214.3 31.8% 91.4%;
-
-		--card: 0 0% 100%;
-		--card-foreground: 222.2 47.4% 11.2%;
 
 		--primary: 250 55% 35%;
 		--primary-foreground: 250 55% 98%;
@@ -70,7 +70,7 @@
 		--secondary: 50 100% 50%;
 		--secondary-foreground: 50 100% 10%;
 
-		--tertiary: 145 100% 30%;
+		--tertiary: 145 100% 25%;
 		--tertiary-foreground: 145 100% 98%;
 
 		--info: 170 80% 50%;
@@ -85,8 +85,8 @@
 		--error: 0 80% 50%;
 		--error-foreground: 0 80% 98%;
 
-		--accent: 210 60% 15%;
-		--accent-foreground: 210 60% 98%;
+		--accent: 210 10% 15%;
+		--accent-foreground: 210 10% 98%;
 
 		--ring: 215 20.2% 65.1%;
 
@@ -100,6 +100,8 @@
 	}
 	body {
 		@apply bg-background text-foreground;
-		font-feature-settings: "rlig" 1, "calt" 1;
+		font-feature-settings:
+			"rlig" 1,
+			"calt" 1;
 	}
 }
