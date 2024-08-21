@@ -2,12 +2,18 @@
 import "@cmsp/design-system/styles.css";
 
 import Page from "@/components/page.astro";
-import { Button, Shell } from "@cmsp/design-system";
+import { Button, Logo, Shell } from "@cmsp/design-system";
 ---
 
 <Page title="Test">
 	<Shell header="Header" footer="Footer">
 		<div class="flex flex-col gap-6 p-4">
+			<div class="flex gap-24">
+				<Logo client:load />
+
+				<Logo animate client:load />
+			</div>
+
 			<div class="flex gap-4">
 				<Button client:load>Primary</Button>
 				<Button variant="secondary" client:load>Secondary</Button>
