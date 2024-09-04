@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import path, { resolve } from "path";
 import glob from "glob";
 import dtsPlugin from "vite-plugin-dts";
 
@@ -17,6 +17,11 @@ export default defineConfig({
 			input: glob.sync("src/**/*.{ts,tsx}", {
 				ignore: "lib/**/*.stories.tsx",
 			}),
+		},
+	},
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "src"),
 		},
 	},
 });

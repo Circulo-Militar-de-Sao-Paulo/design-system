@@ -1,19 +1,19 @@
 {
 	"compilerOptions": {
+		"baseUrl": ".",
 		"target": "ES2022",
 		"lib": ["ES2023"],
 		"module": "ESNext",
 		"jsx": "react-jsx",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
 		"skipLibCheck": true,
-
-		/* Bundler mode */
 		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,
 		"isolatedModules": true,
 		"moduleDetection": "force",
 		"noEmit": true,
-
-		/* Linting */
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
