@@ -1,6 +1,4 @@
 {
 	"useTabs": true,
-	"tabWidth": 4,
-	"plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
-	"tailwindFunctions": ["clsx", "cn", "twmerge", "cva"]
+	"tabWidth": 4
 }
