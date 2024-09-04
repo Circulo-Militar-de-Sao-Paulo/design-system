@@ -1,6 +1,6 @@
 import "../src/index.css";
 
-import { Title, Subtitle, Description, Stories } from "@storybook/blocks";
+import { Description, Stories, Subtitle, Title } from "@storybook/blocks";
 import type { Preview } from "@storybook/react";
 
 const preview: Preview = {
@@ -21,6 +21,9 @@ const preview: Preview = {
 					<Stories />
 				</>
 			),
+		},
+		backgrounds: {
+			disable: true,
 		},
 	},
 };
