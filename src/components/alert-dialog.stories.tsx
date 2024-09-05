@@ -11,7 +11,7 @@ import {
 	AlertDialogHeader,
 	AlertDialogTrigger,
 } from "./alert-dialog";
-import { Button } from "./Button";
+import { Button } from "./button";
 
 /**
  * AlertDialog é um modal de alerta que previne o usuário de interagir com o restante da aplicação
