@@ -27,7 +27,7 @@ export const Default: Story = {
 	render: () => (
 		<AlertDialog>
 			<AlertDialogTrigger asChild>
-				<Button>Open alert dialog</Button>
+				<Button>Abrir modal</Button>
 			</AlertDialogTrigger>
 			<AlertDialogContent>
 				<AlertDialogHeader>
@@ -39,6 +39,30 @@ export const Default: Story = {
 				<AlertDialogFooter>
 					<AlertDialogCancel>Cancelar</AlertDialogCancel>
 					<AlertDialogAction>Sim!</AlertDialogAction>
+				</AlertDialogFooter>
+			</AlertDialogContent>
+		</AlertDialog>
+	),
+};
+
+export const Destructive: Story = {
+	render: () => (
+		<AlertDialog>
+			<AlertDialogTrigger asChild>
+				<Button variant="destructive">Abrir modal</Button>
+			</AlertDialogTrigger>
+			<AlertDialogContent>
+				<AlertDialogHeader>
+					<AlertDialogTitle>Título do alerta</AlertDialogTitle>
+					<AlertDialogDescription>
+						Tem certeza de que deseja deletar?
+					</AlertDialogDescription>
+				</AlertDialogHeader>
+				<AlertDialogFooter>
+					<AlertDialogCancel>Cancelar</AlertDialogCancel>
+					<AlertDialogAction variant="destructive">
+						Deletar!
+					</AlertDialogAction>
 				</AlertDialogFooter>
 			</AlertDialogContent>
 		</AlertDialog>
