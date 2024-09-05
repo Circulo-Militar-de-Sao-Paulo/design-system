@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Alert, AlertDescription, AlertTitle } from "./alert";
-import { IconRocket } from "./icons";
+import { IconAlertCircle, IconRocket } from "./icons";
 
 const meta: Meta<typeof Alert> = {
 	component: Alert,
@@ -22,7 +22,7 @@ export const Default: Story = {
 export const Destructive: Story = {
 	render: () => (
 		<Alert variant="destructive">
-			<IconRocket />
+			<IconAlertCircle />
 			<AlertTitle>Destructive</AlertTitle>
 			<AlertDescription>Alert description</AlertDescription>
 		</Alert>
