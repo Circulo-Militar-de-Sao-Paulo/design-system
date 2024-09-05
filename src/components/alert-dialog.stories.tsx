@@ -38,7 +38,7 @@ export const Default: Story = {
 				</AlertDialogHeader>
 				<AlertDialogFooter>
 					<AlertDialogCancel>Cancelar</AlertDialogCancel>
-					<AlertDialogAction>Sim!</AlertDialogAction>
+					<AlertDialogAction>Continuar</AlertDialogAction>
 				</AlertDialogFooter>
 			</AlertDialogContent>
 		</AlertDialog>
@@ -61,7 +61,7 @@ export const Destructive: Story = {
 				<AlertDialogFooter>
 					<AlertDialogCancel>Cancelar</AlertDialogCancel>
 					<AlertDialogAction variant="destructive">
-						Deletar!
+						Deletar
 					</AlertDialogAction>
 				</AlertDialogFooter>
 			</AlertDialogContent>
