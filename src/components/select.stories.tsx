@@ -1,20 +1,26 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Input } from "./input";
+import { Select } from "./select";
 
-const meta: Meta<typeof Input> = {
-	component: Input,
+const meta: Meta<typeof Select> = {
+	component: Select,
 };
 
-type Story = StoryObj<typeof Input>;
+type Story = StoryObj<typeof Select>;
 
-export const Default: Story = {};
+export const Default: Story = {
+	args: {
+		dialogTitle: "Padrão",
+		dialogDescription: "Selecione uma opção abaixo",
+		items: [{ name: "Opa", fields: [] }],
+	},
+};
 
 export const WithLabel: Story = {
 	args: {
-		type: "password",
 		label: "Senha",
 		placeholder: "Insira sua senha",
+		dialogTitle: "Padrão",
 	},
 };
 
@@ -38,7 +44,6 @@ export const WithErrorMessage: Story = {
 	args: {
 		label: "Email",
 		placeholder: "Insira seu email",
-		value: "email@invalido",
 		message: "Email inválido",
 		messageType: "error",
 	},
@@ -48,7 +53,6 @@ export const WithWarningMessage: Story = {
 	args: {
 		label: "Email",
 		placeholder: "Insira seu email",
-		value: "email@nao-confirmado.com",
 		message: "Email não confirmado",
 		messageType: "warning",
 	},
@@ -58,7 +62,6 @@ export const WithSuccessMessage: Story = {
 	args: {
 		label: "Email",
 		placeholder: "Insira seu email",
-		value: "email@valido.com",
 		message: "Email confirmado",
 		messageType: "success",
 	},
